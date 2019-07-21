@@ -1,0 +1,39 @@
+# run with 0x255
+
+.intel_syntax noprefix
+.bits 32
+	
+.global asm1
+
+asm1:
+	push	ebp
+	mov	ebp,esp
+	cmp	DWORD PTR [ebp+0x8],0xea ; 0x255 > 0xea = TRUE
+	jg 	part_a			 ; Jump to part_a
+	cmp	DWORD PTR [ebp+0x8],0x8
+	jne	part_b
+	mov	eax,DWORD PTR [ebp+0x8]
+	add	eax,0x3
+	jmp	part_d
+part_a:
+	cmp	DWORD PTR [ebp+0x8],0x6 ; 0x255 != 0x6 = TRUE
+	jne	part_c			; Jump to part_c
+	mov	eax,DWORD PTR [ebp+0x8]
+	sub	eax,0x3
+	jmp	part_d
+part_b:
+	mov	eax,DWORD PTR [ebp+0x8]
+	sub	eax,0x3
+	jmp	part_d
+	cmp	DWORD PTR [ebp+0x8],0x126
+	jne	part_c
+	mov	eax,DWORD PTR [ebp+0x8]
+	sub	eax,0x3
+	jmp	part_d
+part_c:
+	mov	eax,DWORD PTR [ebp+0x8]	; move 0x255 to eax
+	add	eax,0x3			; add 0x3 to 0x255 (0x258)
+part_d:
+	pop	ebp
+	ret
+

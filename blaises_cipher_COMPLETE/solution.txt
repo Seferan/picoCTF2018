@@ -1,0 +1,4 @@
+# used https://www.dcode.fr/vigenere-cipher
+# first sent it thru with "Try to decrypt automatically"
+# it indicated the key was FLAG
+# ran again with KNOWING THE KEY: FLAG

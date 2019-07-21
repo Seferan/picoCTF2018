@@ -1,0 +1,10 @@
+gdb ./be-quick-or-be-dead-1
+set disassembly-flavor intel
+break *main
+run
+continue
+ni # to setup on place
+break *0x400845 # breakpoint on call to set_timer
+set $rip = 0x40084a #basically skip over the set_timer call
+continue
+

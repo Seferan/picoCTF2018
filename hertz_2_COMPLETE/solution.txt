@@ -1,0 +1,4 @@
+#run thru https://quipqiup.com/
+#noticed that woxiXKY{ which is picoCTF{
+#Kcqmnoxfjdiphyistnuwvirqdkcqblzagie=Thequickbrownfoxjumpsoverthelazydog
+
