@@ -1,0 +1,9 @@
+# search for IP
+# reverse, cut based on " and grab "2nd" entry
+# sort
+# unique and add count
+# sort reverse
+# print only the first line
+# reverse, cut based on space and reverse
+cat incidents.json | grep "ip" | rev | cut -d '"' -f2 | rev | sort | uniq -c | sort -r | sed -n '1p' | rev | cut -d " " -f1 | rev
+

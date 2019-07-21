@@ -1,0 +1,1 @@
+picoCTF{CrUsHeD_It_d6f202f1}

@@ -1,0 +1,5 @@
+# get the last line...
+nc 2018shell.picoctf.com 49387 | tail -n 1 > flag.txt
+
+# search for picoCTF
+nc 2018shell.picoctf.com 49387 | grep "picoCTF{" > flag.txt

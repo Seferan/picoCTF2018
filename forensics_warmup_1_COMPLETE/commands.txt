@@ -1,0 +1,4 @@
+wget --no-check-certificate http://2018shell.picoctf.com/static/e4161e29a9c65c558d6b38e4ebb2036b/flag.zip
+unzip flag.zip
+eog flag.jpg
+# looked directly at image for flag

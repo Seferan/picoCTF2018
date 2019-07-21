@@ -1,0 +1,12 @@
+ls
+cd secret
+rm *
+echo 'Drop it in!'
+cd ..
+cd executables
+./dontLookHere
+whoami (l33th4x0r
+cd ..
+cp /tmp/TopSecret ./passwords/
+cd passwords
+cat TopSecret

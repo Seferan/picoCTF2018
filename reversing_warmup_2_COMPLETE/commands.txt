@@ -1,0 +1,5 @@
+# this will work (though leaves off picoCTF{ }
+echo 'dGg0dF93NHNfczFtcEwz' | base64 -d > flag.txt
+
+#another way
+base64 -d <<<'dGg0dF93NHNfczFtcEwz'

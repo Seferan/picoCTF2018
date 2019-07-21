@@ -1,0 +1,5 @@
+#john the ripper...
+unshadow passwd shadow > pico_user.txt
+
+john --wordlist=rockyou.txt pico_user.txt
+john --show pico_user.txt

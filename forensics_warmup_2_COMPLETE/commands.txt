@@ -1,0 +1,8 @@
+cd forensics_warmup_2
+wget "https://2018shell.picoctf.com/static/0fde1a3e09824365348827194db9cdde/flag.png"
+wget --no-check-certificate "https://2018shell.picoctf.com/static/0fde1a3e09824365348827194db9cdde/flag.png"
+eog flag.pn
+file flag.png
+mv flag.png flag.jpg
+eog flag.jpg
+

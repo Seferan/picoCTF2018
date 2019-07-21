@@ -1,0 +1,3 @@
+wget --no-check-certificate https://2018shell.picoctf.com/static/40fdfa8d8bce92a4b965c80caf124a4f/run
+chmod +x run
+./run

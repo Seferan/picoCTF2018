@@ -1,0 +1,11 @@
+# recursively print all files
+ls -R
+
+# -R gives us recursive
+grep -oE -R "picoCTF{.*}" *
+# files5/file23:picoCTF{grep_r_and_you_will_find_24c911ab}
+
+# break it up based on : and grab the "2nd" field
+grep -oE -R "picoCTF{.*}" * | cut -d ":" -f2
+#picoCTF{grep_r_and_you_will_find_24c911ab}
+
