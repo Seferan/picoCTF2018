@@ -1,0 +1,7 @@
+strings hex_editor.jpg | grep -oE "picoCTF{.*}"
+
+
+#editors to consider 
+#hexedit
+#bless
+#xxd

@@ -1,0 +1,5 @@
+# launch with Burp Suite
+# send to Repeater
+# change admin=True
+# Go
+

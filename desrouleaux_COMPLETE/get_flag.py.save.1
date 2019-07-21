@@ -1,0 +1,20 @@
+#!/usr/bin/env python
+
+import json
+
+json_data = open('incidents.json')
+data = json.load(json_data)
+json_data.close()
+
+totalips = {}
+
+for c in data['tickets']:
+	if c['src_ip'] in totalips:
+		print 'yup'
+	else:
+		print 'nope'
+#	print c['src_ip']
+#print c['dst_ip']
+
+#print data
+

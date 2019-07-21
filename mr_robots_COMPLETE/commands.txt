@@ -1,0 +1,9 @@
+# name of the CTF hints about robots.txt
+# http://2018shell.picoctf.com:10157/
+# http://2018shell.picoctf.com:10157/robots.txt
+
+#User-agent: *
+#Disallow: /143ce.html
+
+# HAS THE FLAG....
+# http://2018shell.picoctf.com:10157/143ce.html

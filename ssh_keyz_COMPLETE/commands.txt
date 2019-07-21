@@ -1,0 +1,24 @@
+ssh-keygen -t rsa -C "fakeemail@mailinator.com"
+#enter
+#enter
+#enter
+#no password
+
+cat /root/.ssh/id_rsa.pub | xclip
+
+# ON SHELL
+cd ~
+mkdir .ssh
+cd .ssh
+
+cat > authorized_keys
+# paste from Browser the copied text from above
+# Control + D to close file
+
+chmod 600 authorized_keys
+
+ssh Seferan@2018shell.picoctf.com
+
+alias gimmeshell='ssh Seferan@2018shell.picoctf.com'
+
+picoCTF{who_n33ds_p4ssw0rds_38dj21}

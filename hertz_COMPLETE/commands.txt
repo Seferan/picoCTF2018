@@ -1,0 +1,5 @@
+nc 2018shell.picoctf.com 48186 | xclip
+#paste into https://quipqiup.com/
+#results were at top of response...
+
+

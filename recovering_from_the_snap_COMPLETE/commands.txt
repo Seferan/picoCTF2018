@@ -1,0 +1,13 @@
+wget --no-check-certificate https://2018shell.picoctf.com/static/59cd22a161127c4924bbfdc9f25aa4b8/animals.dd
+foremost animals.dd 
+cd output
+
+# nothing interesting
+file *
+cat audit.txt
+
+# resume
+cd jpg
+file *
+eog *
+#last image has flag

@@ -1,0 +1,31 @@
+#!/usr/bin/env python
+
+import json
+
+json_data = open('incidents.json')
+data = json.load(json_data)
+json_data.close()
+
+totalips = {}
+
+for c in data['tickets']:
+	curip = c['src_ip']
+	if curip in totalips:
+		totalips[curip] +=1
+	else:
+		totalips[curip] = 1
+
+	curip = c['dst_ip']
+	if curip in totalips:
+		totalips[curip] +=1 print 'yup'
+	else:
+		totalips[curip] = 1
+		print 'nope'
+
+
+
+#	print c['src_ip']
+#	print type(c['src_ip'])
+
+#print data
+
