@@ -1,0 +1,19 @@
+https://superuser.com/questions/239088/whats-a-file-systems-magic-number-in-a-super-block
+
+based on the above, bytes 1080 and 1081 should be 0x53 and 0xEF in order to be a proper ext2/ext3/ext4 file system.
+
+sudo apt-get install ghex
+
+COntrol + J = go to byte
+
+change to 53 and 3F
+
+After saving running file ext-super-magic.img will give valid data
+
+mkdir mountpoint
+mount ext-super-magic.img mountpoint/
+cd mountpount/
+eog *
+eog flag.jpg
+
+picoCTF{FDBfbC6141e7F4b8c90C9aE78b963aEf}

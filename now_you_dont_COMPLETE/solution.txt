@@ -1,0 +1,4 @@
+java -jar stegsolve.jar
+#type O to open files
+#select the png
+#use arrow keys to find the pane with image

@@ -1,0 +1,3 @@
+Download file and connect to nc
+each bar is 15 minute time window.  Look at the time window and see if the bar "covers" the time reported by NC.
+picoCTF{w4y_0ut_de051415}

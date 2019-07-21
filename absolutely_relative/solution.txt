@@ -1,0 +1,10 @@
+# the permissions check is for "current" directory which is where you run from
+# should have perms to tmp directgory
+
+mkdir /tmp/sef/
+cd /tmp/sef/
+echo yes > permission.txt
+#running from that /tmp/sef/ will have it read permissions from here.
+/problems/absolutely-relative_1_15eb86fcf5d05ec169cc417d24e02c87/absolutely-relative
+
+

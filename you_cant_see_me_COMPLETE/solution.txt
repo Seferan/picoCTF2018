@@ -1,0 +1,4 @@
+ls -a # looks strange...there's a "file" named '.  '
+cat '.  '
+cat .*
+grep -R .

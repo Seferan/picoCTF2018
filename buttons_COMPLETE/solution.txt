@@ -1,0 +1,1 @@
+looking at it, I see the 2nd button isn't a "press".  So we need to do a POST to button2.php

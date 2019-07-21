@@ -1,0 +1,3 @@
+# this works
+strings <file> | grep -oE "picoCTF{.*}"
+#also looking thru DNS records, one of them has a TXT record which gives answer

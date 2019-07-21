@@ -1,0 +1,5 @@
+installed hopper
+opened file "Read Executable to Disassemble
+on left side, hit Procs -> main
+Alt + Enter to go to diassembly /pseudo code view
+
