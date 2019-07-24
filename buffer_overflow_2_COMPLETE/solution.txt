@@ -55,4 +55,5 @@ Segmentation fault
 
 ssh Seferan@2018shell.picoctf.com
 
+#from inside gdb try r <<< $(python -c 'print "whatever"')
 
