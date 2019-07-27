@@ -1,0 +1,840 @@
+Breakpoint 7 at 0x40077e
+<function, no debug info> set_timer;
+Breakpoint 8 at 0x7ffff7e14510
+<function, no debug info> setlocale;
+Breakpoint 9 at 0x7ffff7e1d620
+<function, no debug info> scalbnl;
+Breakpoint 10 at 0x7ffff7e1d9d0
+<function, no debug info> scalbn;
+Breakpoint 11 at 0x7ffff7e1dcf0
+<function, no debug info> scalbnf;
+Breakpoint 12 at 0x7ffff7e1e440
+<function, no debug info> setjmp;
+Breakpoint 13 at 0x7ffff7e1e460
+<function, no debug info> siglongjmp;
+Breakpoint 14 at 0x7ffff7e1e670
+<function, no debug info> signal;
+Note: breakpoint 14 also set at pc 0x7ffff7e1e670.
+Breakpoint 15 at 0x7ffff7e1e670
+<function, no debug info> ssignal;
+Breakpoint 16 at 0x7ffff7e1ea20
+<function, no debug info> sigaction;
+Breakpoint 17 at 0x7ffff7e1ea50
+<function, no debug info> sigprocmask;
+Breakpoint 18 at 0x7ffff7e1eac0
+<function, no debug info> sigpending;
+Breakpoint 19 at 0x7ffff7e1eaf0
+<function, no debug info> sigsuspend;
+Breakpoint 20 at 0x7ffff7e1eb80
+<function, no debug info> sigwait;
+Breakpoint 21 at 0x7ffff7e1ec00
+<function, no debug info> sigblock;
+Breakpoint 22 at 0x7ffff7e1ec90
+<function, no debug info> sigsetmask;
+Breakpoint 23 at 0x7ffff7e1edd0
+<function, no debug info> sigpause;
+Breakpoint 24 at 0x7ffff7e1edf0
+<function, no debug info> sigvec;
+Breakpoint 25 at 0x7ffff7e1ef00
+<function, no debug info> sigstack;
+Breakpoint 26 at 0x7ffff7e1efa0
+<function, no debug info> sigaltstack;
+Breakpoint 27 at 0x7ffff7e1efd0
+<function, no debug info> siginterrupt;
+Breakpoint 28 at 0x7ffff7e1f0a0
+<function, no debug info> sigemptyset;
+Breakpoint 29 at 0x7ffff7e1f0f0
+<function, no debug info> sigfillset;
+Breakpoint 30 at 0x7ffff7e1f140
+<function, no debug info> sigaddset;
+Breakpoint 31 at 0x7ffff7e1f180
+<function, no debug info> sigdelset;
+Breakpoint 32 at 0x7ffff7e1f1c0
+<function, no debug info> sigismember;
+Breakpoint 33 at 0x7ffff7e1f200
+<function, no debug info> sigreturn;
+Breakpoint 34 at 0x7ffff7e1f220
+<function, no debug info> siggetmask;
+Breakpoint 35 at 0x7ffff7e1f2c0
+<function, no debug info> sysv_signal;
+Breakpoint 36 at 0x7ffff7e1f2f0
+<function, no debug info> sigisemptyset;
+Breakpoint 37 at 0x7ffff7e1f340
+<function, no debug info> sigandset;
+Breakpoint 38 at 0x7ffff7e1f390
+<function, no debug info> sigorset;
+Breakpoint 39 at 0x7ffff7e1f440
+<function, no debug info> sigtimedwait;
+Breakpoint 40 at 0x7ffff7e1f530
+<function, no debug info> sigwaitinfo;
+Breakpoint 41 at 0x7ffff7e1f540
+<function, no debug info> sigqueue;
+Breakpoint 42 at 0x7ffff7e1f600
+<function, no debug info> sighold;
+Breakpoint 43 at 0x7ffff7e1f670
+<function, no debug info> sigrelse;
+Breakpoint 44 at 0x7ffff7e1f6f0
+<function, no debug info> sigignore;
+Breakpoint 45 at 0x7ffff7e1f770
+<function, no debug info> sigset;
+Breakpoint 46 at 0x7ffff7e209e0
+<function, no debug info> setenv;
+Breakpoint 47 at 0x7ffff7e20c30
+<function, no debug info> secure_getenv;
+Breakpoint 48 at 0x7ffff7e21820
+<function, no debug info> srand;
+Note: breakpoint 48 also set at pc 0x7ffff7e21820.
+Breakpoint 49 at 0x7ffff7e21820
+<function, no debug info> srandom;
+Breakpoint 50 at 0x7ffff7e21960
+<function, no debug info> setstate;
+Breakpoint 51 at 0x7ffff7e21ad0
+<function, no debug info> setstate_r;
+Breakpoint 52 at 0x7ffff7e21c50
+<function, no debug info> srandom_r;
+Breakpoint 53 at 0x7ffff7e22130
+<function, no debug info> srand48;
+Breakpoint 54 at 0x7ffff7e22140
+<function, no debug info> seed48;
+Breakpoint 55 at 0x7ffff7e222b0
+<function, no debug info> srand48_r;
+Breakpoint 56 at 0x7ffff7e222e0
+<function, no debug info> seed48_r;
+Breakpoint 57 at 0x7ffff7e22500
+<function, no debug info> strfromf;
+Note: breakpoint 57 also set at pc 0x7ffff7e22500.
+Breakpoint 58 at 0x7ffff7e22500
+<function, no debug info> strfromf32;
+Breakpoint 59 at 0x7ffff7e22760
+<function, no debug info> strfromd;
+Note: breakpoint 59 also set at pc 0x7ffff7e22760.
+Breakpoint 60 at 0x7ffff7e22760
+<function, no debug info> strfromf32x;
+Note: breakpoints 59 and 60 also set at pc 0x7ffff7e22760.
+Breakpoint 61 at 0x7ffff7e22760
+<function, no debug info> strfromf64;
+Breakpoint 62 at 0x7ffff7e229b0
+<function, no debug info> strfromf64x;
+Note: breakpoint 62 also set at pc 0x7ffff7e229b0.
+Breakpoint 63 at 0x7ffff7e229b0
+<function, no debug info> strfroml;
+Breakpoint 64 at 0x7ffff7e22c20
+<function, no debug info> strtol;
+Note: breakpoint 64 also set at pc 0x7ffff7e22c20.
+Breakpoint 65 at 0x7ffff7e22c20
+<function, no debug info> strtoll;
+Note: breakpoints 64 and 65 also set at pc 0x7ffff7e22c20.
+Breakpoint 66 at 0x7ffff7e22c20
+<function, no debug info> strtoq;
+Breakpoint 67 at 0x7ffff7e22c50
+<function, no debug info> strtoul;
+Note: breakpoint 67 also set at pc 0x7ffff7e22c50.
+Breakpoint 68 at 0x7ffff7e22c50
+<function, no debug info> strtoull;
+Note: breakpoints 67 and 68 also set at pc 0x7ffff7e22c50.
+Breakpoint 69 at 0x7ffff7e22c50
+<function, no debug info> strtouq;
+Breakpoint 70 at 0x7ffff7e231c0
+<function, no debug info> strtol_l;
+Note: breakpoint 70 also set at pc 0x7ffff7e231c0.
+Breakpoint 71 at 0x7ffff7e231c0
+<function, no debug info> strtoll_l;
+Breakpoint 72 at 0x7ffff7e236b0
+<function, no debug info> strtoul_l;
+Note: breakpoint 72 also set at pc 0x7ffff7e236b0.
+Breakpoint 73 at 0x7ffff7e236b0
+<function, no debug info> strtoull_l;
+Breakpoint 74 at 0x7ffff7e236d0
+<function, no debug info> strtof;
+Note: breakpoint 74 also set at pc 0x7ffff7e236d0.
+Breakpoint 75 at 0x7ffff7e236d0
+<function, no debug info> strtof32;
+Breakpoint 76 at 0x7ffff7e23700
+<function, no debug info> strtod;
+Note: breakpoint 76 also set at pc 0x7ffff7e23700.
+Breakpoint 77 at 0x7ffff7e23700
+<function, no debug info> strtof32x;
+Note: breakpoints 76 and 77 also set at pc 0x7ffff7e23700.
+Breakpoint 78 at 0x7ffff7e23700
+<function, no debug info> strtof64;
+Breakpoint 79 at 0x7ffff7e23730
+<function, no debug info> strtof64x;
+Note: breakpoint 79 also set at pc 0x7ffff7e23730.
+Breakpoint 80 at 0x7ffff7e23730
+<function, no debug info> strtold;
+Breakpoint 81 at 0x7ffff7e260a0
+<function, no debug info> strtof32_l;
+Note: breakpoint 81 also set at pc 0x7ffff7e260a0.
+Breakpoint 82 at 0x7ffff7e260a0
+<function, no debug info> strtof_l;
+Breakpoint 83 at 0x7ffff7e28a10
+<function, no debug info> strtod_l;
+Note: breakpoint 83 also set at pc 0x7ffff7e28a10.
+Breakpoint 84 at 0x7ffff7e28a10
+<function, no debug info> strtof32x_l;
+Note: breakpoints 83 and 84 also set at pc 0x7ffff7e28a10.
+Breakpoint 85 at 0x7ffff7e28a10
+<function, no debug info> strtof64_l;
+Breakpoint 86 at 0x7ffff7e2b1b0
+<function, no debug info> strtof64x_l;
+Note: breakpoint 86 also set at pc 0x7ffff7e2b1b0.
+Breakpoint 87 at 0x7ffff7e2b1b0
+<function, no debug info> strtold_l;
+Breakpoint 88 at 0x7ffff7e2b9c0
+<function, no debug info> system;
+Breakpoint 89 at 0x7ffff7e2c0e0
+<function, no debug info> strfmon;
+Breakpoint 90 at 0x7ffff7e2d820
+<function, no debug info> strfmon_l;
+Breakpoint 91 at 0x7ffff7e2e3f0
+<function, no debug info> strtoimax;
+Breakpoint 92 at 0x7ffff7e2e400
+<function, no debug info> strtoumax;
+Breakpoint 93 at 0x7ffff7e2e4d0
+<function, no debug info> setcontext;
+Breakpoint 94 at 0x7ffff7e2e7f0
+<function, no debug info> swapcontext;
+Breakpoint 95 at 0x7ffff7e30780
+<function, no debug info> strfromf128;
+Breakpoint 96 at 0x7ffff7e309f0
+<function, no debug info> strtof128;
+Breakpoint 97 at 0x7ffff7e33630
+<function, no debug info> strtof128_l;
+Breakpoint 98 at 0x7ffff7e3f630
+<function, no debug info> snprintf;
+Breakpoint 99 at 0x7ffff7e3f6e0
+<function, no debug info> sprintf;
+Breakpoint 100 at 0x7ffff7e53a30
+<function, no debug info> scanf;
+Breakpoint 101 at 0x7ffff7e53b00
+<function, no debug info> sscanf;
+Breakpoint 102 at 0x7ffff7e58e30
+<function, no debug info> setbuffer;
+Breakpoint 103 at 0x7ffff7e58f90
+<function, no debug info> setvbuf;
+Breakpoint 104 at 0x7ffff7e5a460
+<function, no debug info> swprintf;
+Breakpoint 105 at 0x7ffff7e5a9c0
+<function, no debug info> swscanf;
+Breakpoint 106 at 0x7ffff7e5f360
+<function, no debug info> setbuf;
+Breakpoint 107 at 0x7ffff7e5f370
+<function, no debug info> setlinebuf;
+Breakpoint 108 at gnu-indirect-function resolver at 0x7ffff7e6eb70
+<function, no debug info> strcat;
+Breakpoint 109 at gnu-indirect-function resolver at 0x7ffff7e6eba0
+<function, no debug info> strchr;
+Breakpoint 110 at gnu-indirect-function resolver at 0x7ffff7e6ebe0
+<function, no debug info> strcmp;
+Breakpoint 111 at 0x7ffff7e6ec30
+<function, no debug info> strcoll;
+Breakpoint 112 at gnu-indirect-function resolver at 0x7ffff7e6ec40
+<function, no debug info> strcpy;
+Breakpoint 113 at gnu-indirect-function resolver at 0x7ffff7e6ec70
+<function, no debug info> strcspn;
+Breakpoint 114 at 0x7ffff7e6ec90
+<function, no debug info> strverscmp;
+Breakpoint 115 at 0x7ffff7e6eda0
+<function, no debug info> strdup;
+Breakpoint 116 at 0x7ffff7e6edf0
+<function, no debug info> strndup;
+Breakpoint 117 at 0x7ffff7e6ee40
+<function, no debug info> strerror;
+Breakpoint 118 at 0x7ffff7e6eed0
+<function, no debug info> strerror_r;
+Breakpoint 119 at gnu-indirect-function resolver at 0x7ffff7e6f070
+<function, no debug info> strlen;
+Breakpoint 120 at gnu-indirect-function resolver at 0x7ffff7e6f0a0
+<function, no debug info> strnlen;
+Breakpoint 121 at gnu-indirect-function resolver at 0x7ffff7e6f0d0
+<function, no debug info> strncat;
+Breakpoint 122 at gnu-indirect-function resolver at 0x7ffff7e6f100
+<function, no debug info> strncmp;
+Breakpoint 123 at gnu-indirect-function resolver at 0x7ffff7e6f160
+<function, no debug info> strncpy;
+Breakpoint 124 at gnu-indirect-function resolver at 0x7ffff7e6f190
+<function, no debug info> strrchr;
+Breakpoint 125 at gnu-indirect-function resolver at 0x7ffff7e6f1c0
+<function, no debug info> strpbrk;
+Breakpoint 126 at 0x7ffff7e6f280
+<function, no debug info> strsignal;
+Breakpoint 127 at gnu-indirect-function resolver at 0x7ffff7e6f460
+<function, no debug info> strspn;
+Breakpoint 128 at gnu-indirect-function resolver at 0x7ffff7e6fe20
+<function, no debug info> strstr;
+Breakpoint 129 at 0x7ffff7e6fe50
+<function, no debug info> strtok;
+Breakpoint 130 at 0x7ffff7e6fe60
+<function, no debug info> strtok_r;
+Breakpoint 131 at 0x7ffff7e6fed0
+<function, no debug info> strxfrm;
+Breakpoint 132 at gnu-indirect-function resolver at 0x7ffff7e701f0
+<function, no debug info> stpcpy;
+Breakpoint 133 at gnu-indirect-function resolver at 0x7ffff7e70220
+<function, no debug info> stpncpy;
+Breakpoint 134 at gnu-indirect-function resolver at 0x7ffff7e70250
+<function, no debug info> strcasecmp;
+Breakpoint 135 at gnu-indirect-function resolver at 0x7ffff7e702a0
+<function, no debug info> strncasecmp;
+Breakpoint 136 at gnu-indirect-function resolver at 0x7ffff7e702f0
+<function, no debug info> strcasecmp_l;
+Breakpoint 137 at gnu-indirect-function resolver at 0x7ffff7e70340
+<function, no debug info> strncasecmp_l;
+Breakpoint 138 at 0x7ffff7e704b0
+<function, no debug info> strsep;
+Breakpoint 139 at 0x7ffff7e70ac0
+<function, no debug info> strcasestr;
+Breakpoint 140 at 0x7ffff7e70fd0
+<function, no debug info> swab;
+Breakpoint 141 at 0x7ffff7e71000
+<function, no debug info> strfry;
+Breakpoint 142 at gnu-indirect-function resolver at 0x7ffff7e718c0
+<function, no debug info> strchrnul;
+Breakpoint 143 at 0x7ffff7e725f0
+<function, no debug info> strcoll_l;
+Breakpoint 144 at 0x7ffff7e736f4
+<function, no debug info> strxfrm_l;
+Breakpoint 145 at 0x7ffff7e763d0
+<function, no debug info> strerror_l;
+Breakpoint 146 at 0x7ffff7e9ccf0
+<function, no debug info> settimeofday;
+Breakpoint 147 at 0x7ffff7e9f600
+<function, no debug info> setitimer;
+Breakpoint 148 at 0x7ffff7e9f630
+<function, no debug info> stime;
+Breakpoint 149 at 0x7ffff7e9ff60
+<function, no debug info> strptime;
+Breakpoint 150 at 0x7ffff7ea2fe0
+<function, no debug info> strptime_l;
+Breakpoint 151 at 0x7ffff7ea2ff0
+<function, no debug info> strftime;
+Breakpoint 152 at 0x7ffff7ea52a0
+<function, no debug info> strftime_l;
+Breakpoint 153 at 0x7ffff7ea8d20
+<function, no debug info> seekdir;
+Breakpoint 154 at 0x7ffff7ea9110
+<function, no debug info> scandir;
+Note: breakpoint 154 also set at pc 0x7ffff7ea9110.
+Breakpoint 155 at 0x7ffff7ea9110
+<function, no debug info> scandir64;
+Breakpoint 156 at 0x7ffff7ea9240
+<function, no debug info> scandirat;
+Note: breakpoint 156 also set at pc 0x7ffff7ea9240.
+Breakpoint 157 at 0x7ffff7ea9240
+<function, no debug info> scandirat64;
+Breakpoint 158 at 0x7ffff7ea9e70
+<function, no debug info> setgroups;
+Breakpoint 159 at 0x7ffff7eaa5c0
+<function, no debug info> setgrent;
+Breakpoint 160 at 0x7ffff7eac3c0
+<function, no debug info> setpwent;
+Breakpoint 161 at 0x7ffff7ead5f0
+<function, no debug info> sleep;
+Breakpoint 162 at 0x7ffff7eae500
+<function, no debug info> setuid;
+Breakpoint 163 at 0x7ffff7eae590
+<function, no debug info> setgid;
+Breakpoint 164 at 0x7ffff7eae700
+<function, no debug info> setpgid;
+Breakpoint 165 at 0x7ffff7eae750
+<function, no debug info> setpgrp;
+Breakpoint 166 at 0x7ffff7eae790
+<function, no debug info> setsid;
+Breakpoint 167 at 0x7ffff7eae820
+<function, no debug info> setresuid;
+Breakpoint 168 at 0x7ffff7eae8c0
+<function, no debug info> setresgid;
+Breakpoint 169 at 0x7ffff7eaf390
+<function, no debug info> sysconf;
+Breakpoint 170 at 0x7ffff7ec7850
+<function, no debug info> sched_setparam;
+Breakpoint 171 at 0x7ffff7ec7880
+<function, no debug info> sched_getparam;
+Breakpoint 172 at 0x7ffff7ec78b0
+<function, no debug info> sched_setscheduler;
+Breakpoint 173 at 0x7ffff7ec78e0
+<function, no debug info> sched_getscheduler;
+Breakpoint 174 at 0x7ffff7ec7910
+<function, no debug info> sched_yield;
+Breakpoint 175 at 0x7ffff7ec7940
+<function, no debug info> sched_get_priority_max;
+Breakpoint 176 at 0x7ffff7ec7970
+<function, no debug info> sched_get_priority_min;
+Breakpoint 177 at 0x7ffff7ec79a0
+<function, no debug info> sched_rr_get_interval;
+Breakpoint 178 at 0x7ffff7ec79d0 (2 locations)
+<function, no debug info> sched_getaffinity;
+Breakpoint 179 at 0x7ffff7ec7a40 (2 locations)
+<function, no debug info> sched_setaffinity;
+Breakpoint 180 at 0x7ffff7ed0920
+<function, no debug info> sched_getcpu;
+Breakpoint 181 at 0x7ffff7ed0b80
+<function, no debug info> statx;
+Breakpoint 182 at 0x7ffff7ed0e90
+<function, no debug info> statfs;
+Note: breakpoint 182 also set at pc 0x7ffff7ed0e90.
+Breakpoint 183 at 0x7ffff7ed0e90
+<function, no debug info> statfs64;
+Breakpoint 184 at 0x7ffff7ed0ef0
+<function, no debug info> statvfs;
+Note: breakpoint 184 also set at pc 0x7ffff7ed0ef0.
+Breakpoint 185 at 0x7ffff7ed0ef0
+<function, no debug info> statvfs64;
+Breakpoint 186 at 0x7ffff7ed2f00
+<function, no debug info> symlink;
+Breakpoint 187 at 0x7ffff7ed2f30
+<function, no debug info> symlinkat;
+Breakpoint 188 at 0x7ffff7ed5e40
+<function, no debug info> sendfile;
+Note: breakpoint 188 also set at pc 0x7ffff7ed5e40.
+Breakpoint 189 at 0x7ffff7ed5e40
+<function, no debug info> sendfile64;
+Breakpoint 190 at 0x7ffff7ed6380
+<function, no debug info> sync_file_range;
+Breakpoint 191 at 0x7ffff7ed6ea0
+<function, no debug info> setrlimit;
+Note: breakpoint 191 also set at pc 0x7ffff7ed6ea0.
+Breakpoint 192 at 0x7ffff7ed6ea0
+<function, no debug info> setrlimit64;
+Breakpoint 193 at 0x7ffff7ed7260
+<function, no debug info> setpriority;
+Breakpoint 194 at 0x7ffff7ed7360
+<function, no debug info> sbrk;
+Breakpoint 195 at 0x7ffff7ed7400
+<function, no debug info> sstk;
+Breakpoint 196 at 0x7ffff7ed79b0
+<function, no debug info> setreuid;
+Breakpoint 197 at 0x7ffff7ed7a50
+<function, no debug info> setregid;
+Breakpoint 198 at 0x7ffff7ed7af0
+<function, no debug info> seteuid;
+Breakpoint 199 at 0x7ffff7ed7bc0
+<function, no debug info> setegid;
+Breakpoint 200 at 0x7ffff7ed7e60
+<function, no debug info> sethostname;
+Breakpoint 201 at 0x7ffff7ed7fb0
+<function, no debug info> setdomainname;
+Breakpoint 202 at 0x7ffff7ed7fe0
+<function, no debug info> select;
+Breakpoint 203 at 0x7ffff7ed8280
+<function, no debug info> sync;
+Breakpoint 204 at 0x7ffff7ed8330
+<function, no debug info> syncfs;
+Breakpoint 205 at 0x7ffff7ed8570
+<function, no debug info> sethostid;
+Breakpoint 206 at 0x7ffff7ed8690
+<function, no debug info> swapon;
+Breakpoint 207 at 0x7ffff7ed86c0
+<function, no debug info> swapoff;
+Breakpoint 208 at 0x7ffff7ed88b0
+<function, no debug info> stty;
+Breakpoint 209 at 0x7ffff7ed8b40
+<function, no debug info> setfsent;
+Breakpoint 210 at 0x7ffff7ed8e24
+<function, no debug info> setmntent;
+Breakpoint 211 at 0x7ffff7ed9b00
+<function, no debug info> setttyent;
+Breakpoint 212 at 0x7ffff7eda250
+<function, no debug info> setusershell;
+Breakpoint 213 at 0x7ffff7edacb0
+<function, no debug info> syslog;
+Breakpoint 214 at 0x7ffff7edaf20
+<function, no debug info> setlogmask;
+Breakpoint 215 at 0x7ffff7edaf40
+<function, no debug info> syscall;
+Breakpoint 216 at 0x7ffff7ede430
+<function, no debug info> setxattr;
+Breakpoint 217 at 0x7ffff7ee0400
+<function, no debug info> sysctl;
+Breakpoint 218 at 0x7ffff7ee0560
+<function, no debug info> setfsuid;
+Breakpoint 219 at 0x7ffff7ee0590
+<function, no debug info> setfsgid;
+Breakpoint 220 at 0x7ffff7ee0680
+<function, no debug info> signalfd;
+Breakpoint 221 at 0x7ffff7ee09a0
+<function, no debug info> splice;
+Breakpoint 222 at 0x7ffff7ee1130
+<function, no debug info> sysinfo;
+Breakpoint 223 at 0x7ffff7ee12b0
+<function, no debug info> setns;
+Breakpoint 224 at 0x7ffff7ee1840
+<function, no debug info> send;
+Breakpoint 225 at 0x7ffff7ee1900
+<function, no debug info> sendmsg;
+Breakpoint 226 at 0x7ffff7ee19a0
+<function, no debug info> sendto;
+Breakpoint 227 at 0x7ffff7ee1a60
+<function, no debug info> setsockopt;
+Breakpoint 228 at 0x7ffff7ee1a90
+<function, no debug info> shutdown;
+Breakpoint 229 at 0x7ffff7ee1ac0
+<function, no debug info> socket;
+Breakpoint 230 at 0x7ffff7ee1af0
+<function, no debug info> socketpair;
+Breakpoint 231 at 0x7ffff7ee1d40
+<function, no debug info> sockatmark;
+Breakpoint 232 at 0x7ffff7ee1ee0
+<function, no debug info> sendmmsg;
+Breakpoint 233 at 0x7ffff7ee2210
+<function, no debug info> semop;
+Breakpoint 234 at 0x7ffff7ee2240
+<function, no debug info> semget;
+Breakpoint 235 at 0x7ffff7ee2270
+<function, no debug info> semctl;
+Breakpoint 236 at 0x7ffff7ee2310
+<function, no debug info> semtimedop;
+Breakpoint 237 at 0x7ffff7ee2340
+<function, no debug info> shmat;
+Breakpoint 238 at 0x7ffff7ee2370
+<function, no debug info> shmdt;
+Breakpoint 239 at 0x7ffff7ee23a0
+<function, no debug info> shmget;
+Breakpoint 240 at 0x7ffff7ee23d0
+<function, no debug info> shmctl;
+Breakpoint 241 at 0x7ffff7ee3234
+<function, no debug info> sprofil;
+Breakpoint 242 at 0x7ffff7ee4bf0
+<function, no debug info> sgetspent;
+Breakpoint 243 at 0x7ffff7ee5490
+<function, no debug info> setspent;
+Breakpoint 244 at 0x7ffff7ee5e20
+<function, no debug info> sgetspent_r;
+Breakpoint 245 at 0x7ffff7ee66c0
+<function, no debug info> sgetsgent;
+Breakpoint 246 at 0x7ffff7ee6d40
+<function, no debug info> setsgent;
+Breakpoint 247 at 0x7ffff7ee7610
+<function, no debug info> sgetsgent_r;
+Breakpoint 248 at 0x7ffff7ef3260
+<function, no debug info> sethostent;
+Breakpoint 249 at 0x7ffff7ef3d90
+<function, no debug info> setnetent;
+Breakpoint 250 at 0x7ffff7ef49a0
+<function, no debug info> setprotoent;
+Breakpoint 251 at 0x7ffff7ef5cb0
+<function, no debug info> setservent;
+Breakpoint 252 at 0x7ffff7ef8db0
+<function, no debug info> setnetgrent;
+Breakpoint 253 at 0x7ffff7ef9770
+<function, no debug info> setaliasent;
+Breakpoint 254 at 0x7ffff7efc7c4
+<function, no debug info> setipv4sourcefilter;
+Breakpoint 255 at 0x7ffff7efcb14
+<function, no debug info> setsourcefilter;
+Breakpoint 256 at 0x7ffff7f07710
+<function, no debug info> svcraw_create;
+Breakpoint 257 at 0x7ffff7f0a970
+<function, no debug info> setrpcent;
+Breakpoint 258 at 0x7ffff7f0c410
+<function, no debug info> svcunix_create;
+Breakpoint 259 at 0x7ffff7f0c670
+<function, no debug info> svcunixfd_create;
+Breakpoint 260 at 0x7ffff7f107c0
+<function, no debug info> svc_register;
+Breakpoint 261 at 0x7ffff7f108a0
+<function, no debug info> svc_unregister;
+Breakpoint 262 at 0x7ffff7f10920
+<function, no debug info> svc_sendreply;
+Breakpoint 263 at 0x7ffff7f10990
+<function, no debug info> svcerr_noproc;
+Breakpoint 264 at 0x7ffff7f10a00
+<function, no debug info> svcerr_decode;
+Breakpoint 265 at 0x7ffff7f10a70
+<function, no debug info> svcerr_systemerr;
+Breakpoint 266 at 0x7ffff7f10ae0
+<function, no debug info> svcerr_auth;
+Breakpoint 267 at 0x7ffff7f10b40
+<function, no debug info> svcerr_weakauth;
+Breakpoint 268 at 0x7ffff7f10ba0
+<function, no debug info> svcerr_noprog;
+Breakpoint 269 at 0x7ffff7f10c10
+<function, no debug info> svcerr_progvers;
+Breakpoint 270 at 0x7ffff7f10c80
+<function, no debug info> svc_getreq_common;
+Breakpoint 271 at 0x7ffff7f10f60
+<function, no debug info> svc_getreqset;
+Breakpoint 272 at 0x7ffff7f10ff0
+<function, no debug info> svc_getreq;
+Breakpoint 273 at 0x7ffff7f11050
+<function, no debug info> svc_getreq_poll;
+Breakpoint 274 at 0x7ffff7f115d0
+<function, no debug info> svctcp_create;
+Breakpoint 275 at 0x7ffff7f11810
+<function, no debug info> svcfd_create;
+Breakpoint 276 at 0x7ffff7f11e60
+<function, no debug info> svcudp_bufcreate;
+Breakpoint 277 at 0x7ffff7f12240
+<function, no debug info> svcudp_create;
+Breakpoint 278 at 0x7ffff7f12250
+<function, no debug info> svcudp_enablecache;
+Breakpoint 279 at 0x7ffff7f14060
+<function, no debug info> svc_exit;
+Breakpoint 280 at 0x7ffff7f14090
+<function, no debug info> svc_run;
+Breakpoint 281 at 0x7ffff7f18720
+<function, no debug info> setlogin;
+Breakpoint 282 at 0x7ffff7f18950
+<function, no debug info> setutent;
+Breakpoint 283 at 0x7ffff7f1a980
+<function, no debug info> setutxent;
+Note: breakpoint 178 also set at pc 0x7ffff7ec79d0.
+Note: breakpoint 178 also set at pc 0x7ffff7f1d7a0.
+Breakpoint 284 at 0x7ffff7ec79d0 (2 locations)
+<function, no debug info> sched_getaffinity;
+Note: breakpoint 179 also set at pc 0x7ffff7ec7a40.
+Note: breakpoint 179 also set at pc 0x7ffff7f1d7b0.
+Breakpoint 285 at 0x7ffff7ec7a40 (2 locations)
+<function, no debug info> sched_setaffinity;
+Breakpoint 286 at 0x7ffff7f1dd10
+<function, no debug info> step;
+Continuing.
+
+Program received signal SIGINT, Interrupt.
+0x000000000040070f in fib ()
+No symbol table info available.
+"info" must be followed by the name of an info command.
+List of info subcommands:
+
+info address -- Describe where symbol SYM is stored
+info all-registers -- List of all registers and their contents
+info args -- Argument variables of current stack frame
+info auto-load -- Print current status of auto-loaded files
+info auxv -- Display the inferior's auxiliary vector
+info bookmarks -- Status of user-settable bookmarks
+info breakpoints -- Status of specified breakpoints (all user-settable breakpoints if no argument)
+info checkpoints -- IDs of currently known checkpoints
+info classes -- All Objective-C classes
+info common -- Print out the values contained in a Fortran COMMON block
+info copying -- Conditions for redistributing copies of GDB
+info dcache -- Print information on the dcache performance
+info display -- Expressions to display when program stops
+info exceptions -- List all Ada exception names
+info extensions -- All filename extensions associated with a source language
+info files -- Names of targets and files being debugged
+info float -- Print the status of the floating point unit
+info frame -- All about selected stack frame
+info frame-filter -- List all registered Python frame-filters
+info functions -- All function names
+info guile -- Prefix command for Guile info displays
+info handle -- What debugger does when program gets various signals
+info inferiors -- Print a list of inferiors being managed
+info line -- Core addresses of the code for a source line
+info locals -- Local variables of current stack frame
+info macro -- Show the definition of MACRO
+info macros -- Show the definitions of all macros at LINESPEC
+info mem -- Memory region attributes
+info os -- Show OS data ARG
+info pretty-printer -- GDB command to list all registered pretty-printers
+info probes -- Show available static probes
+info proc -- Show /proc process information about any running process
+info program -- Execution status of the program
+info record -- Info record options
+info registers -- List of integer registers and their contents
+info scope -- List the variables local to a scope
+info selectors -- All Objective-C selectors
+info set -- Show all GDB settings
+info sharedlibrary -- Status of loaded shared object libraries
+info signals -- What debugger does when program gets various signals
+info skip -- Display the status of skips
+info source -- Information about the current source file
+info sources -- Source files in the program
+info stack -- Backtrace of the stack
+info static-tracepoint-markers -- List target static tracepoints markers
+info symbol -- Describe what symbol is at location ADDR
+info target -- Names of targets and files being debugged
+info tasks -- Provide information about all known Ada tasks
+info terminal -- Print inferior's saved terminal status
+info threads -- Display currently known threads
+info tracepoints -- Status of specified tracepoints (all tracepoints if no argument)
+info tvariables -- Status of trace state variables and their values
+info type-printers -- GDB command to list all registered type-printers
+info types -- All type names
+info unwinder -- GDB command to list unwinders
+info variables -- All global and static variable names
+info vector -- Print the status of the vector unit
+info vtbl -- Show the virtual function table for a C++ object
+info warranty -- Various kinds of warranty you do not have
+info watchpoints -- Status of specified watchpoints (all watchpoints if no argument)
+info win -- List of all displayed windows
+info xmethod -- GDB command to list registered xmethod matchers
+
+Type "help info" followed by info subcommand name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+Dump of assembler code for function fib:
+   0x0000000000400706 <+0>:	push   rbp
+   0x0000000000400707 <+1>:	mov    rbp,rsp
+   0x000000000040070a <+4>:	push   rbx
+   0x000000000040070b <+5>:	sub    rsp,0x28
+=> 0x000000000040070f <+9>:	mov    DWORD PTR [rbp-0x24],edi
+   0x0000000000400712 <+12>:	cmp    DWORD PTR [rbp-0x24],0x1
+   0x0000000000400716 <+16>:	ja     0x400720 <fib+26>
+   0x0000000000400718 <+18>:	mov    eax,DWORD PTR [rbp-0x24]
+   0x000000000040071b <+21>:	mov    DWORD PTR [rbp-0x14],eax
+   0x000000000040071e <+24>:	jmp    0x400741 <fib+59>
+   0x0000000000400720 <+26>:	mov    eax,DWORD PTR [rbp-0x24]
+   0x0000000000400723 <+29>:	sub    eax,0x1
+   0x0000000000400726 <+32>:	mov    edi,eax
+   0x0000000000400728 <+34>:	call   0x400706 <fib>
+   0x000000000040072d <+39>:	mov    ebx,eax
+   0x000000000040072f <+41>:	mov    eax,DWORD PTR [rbp-0x24]
+   0x0000000000400732 <+44>:	sub    eax,0x2
+   0x0000000000400735 <+47>:	mov    edi,eax
+   0x0000000000400737 <+49>:	call   0x400706 <fib>
+   0x000000000040073c <+54>:	add    eax,ebx
+   0x000000000040073e <+56>:	mov    DWORD PTR [rbp-0x14],eax
+   0x0000000000400741 <+59>:	mov    eax,DWORD PTR [rbp-0x14]
+   0x0000000000400744 <+62>:	add    rsp,0x28
+   0x0000000000400748 <+66>:	pop    rbx
+   0x0000000000400749 <+67>:	pop    rbp
+   0x000000000040074a <+68>:	ret    
+End of assembler dump.
+Breakpoint 287 at 0x400706
+No symbol table info available.
+Continuing.
+
+Breakpoint 287, 0x0000000000400706 in fib ()
+No symbol table info available.
+Continuing.
+
+Breakpoint 287, 0x0000000000400706 in fib ()
+Continuing.
+
+Breakpoint 287, 0x0000000000400706 in fib ()
+Continuing.
+
+Breakpoint 287, 0x0000000000400706 in fib ()
+Continuing.
+
+Breakpoint 287, 0x0000000000400706 in fib ()
+Continuing.
+
+Breakpoint 287, 0x0000000000400706 in fib ()
+Continuing.
+
+Breakpoint 287, 0x0000000000400706 in fib ()
+Continuing.
+
+Breakpoint 287, 0x0000000000400706 in fib ()
+Dump of assembler code for function fib:
+=> 0x0000000000400706 <+0>:	push   rbp
+   0x0000000000400707 <+1>:	mov    rbp,rsp
+   0x000000000040070a <+4>:	push   rbx
+   0x000000000040070b <+5>:	sub    rsp,0x28
+   0x000000000040070f <+9>:	mov    DWORD PTR [rbp-0x24],edi
+   0x0000000000400712 <+12>:	cmp    DWORD PTR [rbp-0x24],0x1
+   0x0000000000400716 <+16>:	ja     0x400720 <fib+26>
+   0x0000000000400718 <+18>:	mov    eax,DWORD PTR [rbp-0x24]
+   0x000000000040071b <+21>:	mov    DWORD PTR [rbp-0x14],eax
+   0x000000000040071e <+24>:	jmp    0x400741 <fib+59>
+   0x0000000000400720 <+26>:	mov    eax,DWORD PTR [rbp-0x24]
+   0x0000000000400723 <+29>:	sub    eax,0x1
+   0x0000000000400726 <+32>:	mov    edi,eax
+   0x0000000000400728 <+34>:	call   0x400706 <fib>
+   0x000000000040072d <+39>:	mov    ebx,eax
+   0x000000000040072f <+41>:	mov    eax,DWORD PTR [rbp-0x24]
+   0x0000000000400732 <+44>:	sub    eax,0x2
+   0x0000000000400735 <+47>:	mov    edi,eax
+   0x0000000000400737 <+49>:	call   0x400706 <fib>
+   0x000000000040073c <+54>:	add    eax,ebx
+   0x000000000040073e <+56>:	mov    DWORD PTR [rbp-0x14],eax
+   0x0000000000400741 <+59>:	mov    eax,DWORD PTR [rbp-0x14]
+   0x0000000000400744 <+62>:	add    rsp,0x28
+   0x0000000000400748 <+66>:	pop    rbx
+   0x0000000000400749 <+67>:	pop    rbp
+   0x000000000040074a <+68>:	ret    
+End of assembler dump.
+No symbol table info available.
+rax            0x1                 1
+rbx            0x3                 3
+rcx            0x7ffff7ed1504      140737352897796
+rdx            0x7ffff7fa48c0      140737353763008
+rsi            0x602260            6300256
+rdi            0x1                 1
+rbp            0x7ffffffed680      0x7ffffffed680
+rsp            0x7ffffffed648      0x7ffffffed648
+r8             0x7ffff7fa9500      140737353782528
+r9             0x7ffff7fa3848      140737353758792
+r10            0x7ffff7fa9500      140737353782528
+r11            0x246               582
+r12            0x4005a0            4195744
+r13            0x7fffffffe220      140737488347680
+r14            0x0                 0
+r15            0x0                 0
+rip            0x400706            0x400706 <fib>
+eflags         0x202               [ IF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x0                 0
+es             0x0                 0
+fs             0x0                 0
+gs             0x0                 0
+Continuing.
+
+Breakpoint 287, 0x0000000000400706 in fib ()
+rax            0x0                 0
+rbx            0x1                 1
+rcx            0x7ffff7ed1504      140737352897796
+rdx            0x7ffff7fa48c0      140737353763008
+rsi            0x602260            6300256
+rdi            0x0                 0
+rbp            0x7ffffffed680      0x7ffffffed680
+rsp            0x7ffffffed648      0x7ffffffed648
+r8             0x7ffff7fa9500      140737353782528
+r9             0x7ffff7fa3848      140737353758792
+r10            0x7ffff7fa9500      140737353782528
+r11            0x246               582
+r12            0x4005a0            4195744
+r13            0x7fffffffe220      140737488347680
+r14            0x0                 0
+r15            0x0                 0
+rip            0x400706            0x400706 <fib>
+eflags         0x246               [ PF ZF IF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x0                 0
+es             0x0                 0
+fs             0x0                 0
+gs             0x0                 0
+Continuing.
+
+Breakpoint 287, 0x0000000000400706 in fib ()
+rax            0x1                 1
+rbx            0x1                 1
+rcx            0x7ffff7ed1504      140737352897796
+rdx            0x7ffff7fa48c0      140737353763008
+rsi            0x602260            6300256
+rdi            0x1                 1
+rbp            0x7ffffffed6c0      0x7ffffffed6c0
+rsp            0x7ffffffed688      0x7ffffffed688
+r8             0x7ffff7fa9500      140737353782528
+r9             0x7ffff7fa3848      140737353758792
+r10            0x7ffff7fa9500      140737353782528
+r11            0x246               582
+r12            0x4005a0            4195744
+r13            0x7fffffffe220      140737488347680
+r14            0x0                 0
+r15            0x0                 0
+rip            0x400706            0x400706 <fib>
+eflags         0x202               [ IF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x0                 0
+es             0x0                 0
+fs             0x0                 0
+gs             0x0                 0
+Dump of assembler code for function calculate_key:
+   0x000000000040074b <+0>:	push   rbp
+   0x000000000040074c <+1>:	mov    rbp,rsp
+   0x000000000040074f <+4>:	mov    edi,0x43b
+   0x0000000000400754 <+9>:	call   0x400706 <fib>
+   0x0000000000400759 <+14>:	pop    rbp
+   0x000000000040075a <+15>:	ret    
+End of assembler dump.
+Continuing.
+
+Breakpoint 287, 0x0000000000400706 in fib ()
+Bad breakpoint number '*'
+Starting program: /root/picoCTF2018/be_quick_or_be_dead_2/be-quick-or-be-dead-2 
+warning: File "/usr/lib/debug/.build-id/f2/5dfd7b95be4ba386fd71080accae8c0732b711.debug" has no build-id, file skipped
