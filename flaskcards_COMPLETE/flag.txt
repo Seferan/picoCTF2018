@@ -1,0 +1,1 @@
+picoCTF{secret_keys_to_the_kingdom_45e7608d}

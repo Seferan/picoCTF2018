@@ -1,0 +1,6 @@
+https://nvisium.com/blog/2015/12/07/injecting-flask.html
+https://portswigger.net/blog/server-side-template-injection
+
+sending in {{ 7 * 7 }} causes the engine to run it and produce 49
+
+
