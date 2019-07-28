@@ -1,0 +1,8 @@
+stin = 0
+stout = 1
+sterr = 2
+
+#dump output to /dev/null
+#stderr is what has the flag
+echo "Please may I have the flag? " | ./in-out-error 1>/dev/null
+
