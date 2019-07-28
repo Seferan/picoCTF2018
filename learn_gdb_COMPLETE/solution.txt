@@ -1,0 +1,21 @@
+#installed peda (don't need)
+#https://github.com/longld/peda
+
+#git clone https://github.com/longld/peda.git ~/peda
+#echo "source ~/peda/peda.py" >> ~/.gdbinit
+#echo "DONE! debug your program with gdb and enjoy"
+
+gdb ./run
+
+# set breakpoint on call to decrypt flag
+break *0x400905
+#step over
+ni
+#print string of buf_flag
+#note John didn't need to do the cast to (char*)
+x/s (char*) flag_buf
+
+
+
+"picoCTF{gDb_iS_sUp3r_u53fuL_efaa2b29}"
+
