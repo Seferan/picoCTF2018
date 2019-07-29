@@ -1,0 +1,23 @@
+#with core dump, open with gdb
+# gdb <program> [core dump]
+# gdb ./print_flag ./core 
+
+# where shows callstack
+
+# show 32 instructions starting at current instruction pointer
+# x/32i $eip
+
+# a bit lower, we see an address 0x804a080
+# check it out with 
+# notice that it says <strs>
+# x/x 0x804a080
+# 0x804a080 <strs>:	0x08
+
+# x/s 0x804894c
+# 0x804894c:	"your flag is: picoCTF{%s}\n"
+
+# we see an offset of in the disas
+# x/s strs[0x539]
+# 0x80610f0:	"31b1f6d7550619d1f774bef9c4c0e2e8"
+
+picoCTF{31b1f6d7550619d1f774bef9c4c0e2e8}
