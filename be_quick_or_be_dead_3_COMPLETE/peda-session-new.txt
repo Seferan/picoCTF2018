@@ -1,0 +1,8 @@
+break *calculate_key
+disable $bpnum
+break *calculate_key
+disable $bpnum
+break *0x40079b
+break *0x0000000000400792
+disable $bpnum
+

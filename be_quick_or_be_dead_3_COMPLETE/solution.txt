@@ -1,0 +1,59 @@
+# first step was to run the program.  Similar alarm goes off..
+# patch assembly with code from get_flag.py > .new
+
+# open assmebly in Hopper.  Bulk of work is in Calc
+# this is a recursive function like last time where it is
+# redoing the calculations
+# copy to Visual Studio Code and rename variables to determine function...
+
+# if argument is <= 4, then value is argument squared + 0x2345 (9029).
+# return arg0 * arg0 + 0x2345
+
+# otherhwise, a gross calculation.
+# n[i] = n[i-5]*0x1234 + n[i-1] + n[i-3] - n[i-2] - n[i-4]
+# n[i] = n[i-5]*0x1234 + (n[i-1] + n[i-3]) - (n[i-2] + n[i-4])
+
+# from hopper we see the initial value is
+# calc(0x18f4b);
+# 102219
+
+# from GDB, we can run a few examples (quickly)
+# set breakpoint right before call to calc, change varialbe (edi)
+
+# disas calculate_key
+# break *0x40079b
+# set $edi = 0x5
+# ni 
+# p/x $rax
+
+# some fun with GDB
+# https://stackoverflow.com/questions/1262639/multiple-commands-in-gdb-separated-by-some-sort-of-delimiter
+# set $iterator = 1
+# define calc_fn
+# >run
+# >set $edi = $iterator
+# >ni
+# >p/x $rax
+# >p/x $iterator
+# >set $iterator = $iterator + 1
+# >end
+
+# calc_fn to run
+# show user calc_fn to see what it does
+
+# 5 = 0x282040e
+# 6 = 0x503f6f6
+# 7 = 0x5043fc3
+# 8 = 0x504d15e
+# 9 = 0x505abc7
+# 10 = 0xa6b2f20e
+# 11 = 0xedd94dda
+
+# 25 = 0x3e4587de
+
+# wrote calculate_key.py which did the calculation iteratively
+
+# 102219: 797760575: 0x2f8cdc3f
+# Continued working in get_flag.py
+
+# picoCTF{dynamic_pr0gramming_ftw_22ac7d81}
