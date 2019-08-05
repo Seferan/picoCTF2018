@@ -1,0 +1,6 @@
+break *vuln
+break win_function2
+disable $bpnum
+break * flag
+break *flag
+
