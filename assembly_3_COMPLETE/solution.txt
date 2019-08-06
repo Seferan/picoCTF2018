@@ -1,0 +1,59 @@
+# used NotePad++ to do syntax highlighting
+# little endian needed for passing int parameters
+# also need to set back when performing the WORD operation
+
+# added comments to each line as I worked thru
+
+
+.intel_syntax noprefix
+.bits 32
+	
+.global asm3
+
+; asm3(0xb5e8e971,0xc6b58a95,0xe20737e9)
+; https://wiki.skullsecurity.org/index.php?title=Registers
+
+; Here are two examples:
+
+; eax	0x12345678
+; ax	0x5678
+; ah	0x56
+; al	0x78
+
+; https://wiki.skullsecurity.org/index.php?title=The_Stack
+; ebp+8 would normally be parameter 1
+; ebp+C would normally be parameter 2
+
+; normal parameter after push/mov ebp occurs
+; little endian order
+; 0x8   0xb5e8e971 -> 71 e9 e8 b5
+; 0xC   0xc6b58a95 -> 95 8a b5 c6
+; 0x10  0xe20737e9 -> e9 37 07 e2
+
+; 10 - param3
+; C  - param2
+; 8  - param1
+; 4  return address
+; 0  ebp
+
+; broken out into bytes.
+; 10, 11, 12, 13	e9 37 07 e2
+; 0C, 0D, 0E, 0F	95 8a 6b c6
+; 08, 09, 0A, 0B	e9 37 07 e2
+
+
+
+asm3:
+	push    ebp
+	mov     ebp,esp
+	mov	eax,0x19		; eax = 0x19
+	xor	al,al			; eax = 0x0
+	mov	ah,BYTE PTR [ebp+0xa]	; eax = 0x0700
+	sal	ax,0x10			; shift left 16 bits, eax = 0x0
+	sub	al,BYTE PTR [ebp+0xd]	; eax = 0x76 (00 - 8a)
+	add	ah,BYTE PTR [ebp+0xc]	; eax = 0x9576
+	xor	ax,WORD PTR [ebp+0x12]  ; 0xe207^0x9576, notice flip of bits for word, eax = 0x7771
+	mov	esp, ebp
+	pop	ebp
+	ret
+
