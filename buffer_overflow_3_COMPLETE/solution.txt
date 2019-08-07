@@ -1,0 +1,34 @@
+   0x0804883e <+123>:	call   0x8048500 <printf@plt>
+   0x08048843 <+128>:	add    esp,0x10
+   0x08048846 <+131>:	mov    eax,DWORD PTR [ebp-0x54]
+   0x08048849 <+134>:	sub    esp,0x4
+   0x0804884c <+137>:	push   eax
+   0x0804884d <+138>:	lea    eax,[ebp-0x30]
+   0x08048850 <+141>:	push   eax
+   0x08048851 <+142>:	push   0x0
+   0x08048853 <+144>:	call   0x80484f0 <read@plt>
+
+
+#snippet from disas vuln.
+# the read@plt is where we read in the input
+# from 0x804884d we see that we are 0x30 or 48 bytes from frame pointer.
+# adding in old value of frame pointer, we should have 52 bytes away from return address...
+# 52 bytes + return address...
+
+# my way of finding this is break* 0x08048853
+# our old return address was 0x80488fe 
+# so we see we have 28 * 2 = 56 bytes total we need to write with the last 2 being our return address.
+
+x/28x $sp
+0xffffd240:	0x00000000	0xffffd278	0x00000001	0x00000001
+0xffffd250:	0x00000000	0x00000001	0xf7fa0a31	0x00000000
+0xffffd260:	0xffffd2a8	0xf7fe9690	0x00000004	0x00000000
+0xffffd270:	0xf7fa3000	0xf7fa3000	0xffffd2a8	0x080487bd
+0xffffd280:	0x0804b160	0x00000001	0x00000004	0x0804b160
+0xffffd290:	0x00000000	0xf7ffd950	0x3d3f5f68	0x00000001
+0xffffd2a0:	0x00000000	0x00000000	0xffffd2c8	0x080488fe
+
+gdb-peda$ x win
+   0x80486eb <win>:	push   ebp
+
+
