@@ -1,0 +1,6 @@
+BMP File Format
+https://en.wikipedia.org/wiki/BMP_file_format
+
+BitmapINFOHEADER indicates it is 40 bytes long and starts at 0xE, so 54 bytes into file is where the picture starts...
+
+
