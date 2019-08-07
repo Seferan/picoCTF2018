@@ -1,0 +1,14 @@
+https://stackoverflow.com/questions/6329887/compiling-problems-cannot-find-crt1-o
+sudo apt install gcc-multilib
+
+nasm -f elf comp.nasm
+gcc -m32 comp.o -o comp
+./comp
+
+picoCTF{1_h0p3_y0u_c0mP1l3d_tH15_94698637933
+
+Not sure why, but that input has an extra 33 on the end and missing }
+
+actual flag
+
+picoCTF{1_h0p3_y0u_c0mP1l3d_tH15_946986379}
