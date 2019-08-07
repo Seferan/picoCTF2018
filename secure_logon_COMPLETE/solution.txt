@@ -1,0 +1,23 @@
+Problem is using AES in CBC mode.
+
+Great graphic: https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#CBC
+
+Source tells us the block size is 16
+
+Inside Python Interactive
+
+>>> cookie={}
+>>> cookie['password']='password'
+>>> cookie['admin']=0
+>>> cookie['username']='username'
+>>> import json
+>>> json.dumps(cookie,sort_keys=True)
+'{"admin": 0, "password": "password", "username": "username"}'
+
+# note that the 0 of admin is the 11th byte (index 10)
+
+
+I enter the data into the form to get cookie in burp:
+
+Cookie: {'password': 'password', 'admin': 0, 'username': 'username'} 
+h7axJ0jOLCL1bWykFYDIu1ju63b0Yyrw/R1sAJHDg/rGI4Bfs0v8ITuSOEK50EXhSQ9/uT6GCzQDnt/+8U+IH96FQZFFp2icO81i+hxL2So=
