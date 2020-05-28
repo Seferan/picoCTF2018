@@ -31,4 +31,11 @@ p $eax
 # replace $eax at 0x4007e6 with value above..
 
 
+#following John
+#open Hopper
+#Control Shift O to open file
+#Go to Main Function
+#Alt + Enter to see Pseudo Code
 
+# shows off using pwn tools function ASM
+# see ape.py

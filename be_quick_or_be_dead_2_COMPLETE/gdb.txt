@@ -838,3 +838,29 @@ Breakpoint 287, 0x0000000000400706 in fib ()
 Bad breakpoint number '*'
 Starting program: /root/picoCTF2018/be_quick_or_be_dead_2/be-quick-or-be-dead-2 
 warning: File "/usr/lib/debug/.build-id/f2/5dfd7b95be4ba386fd71080accae8c0732b711.debug" has no build-id, file skipped
+Error in re-setting breakpoint 108: Function "strcat" not defined.
+Error in re-setting breakpoint 109: Function "strchr" not defined.
+Error in re-setting breakpoint 110: Function "strcmp" not defined.
+Error in re-setting breakpoint 112: Function "strcpy" not defined.
+Error in re-setting breakpoint 113: Function "strcspn" not defined.
+Error in re-setting breakpoint 119: Function "strlen" not defined.
+Error in re-setting breakpoint 120: Function "strnlen" not defined.
+Error in re-setting breakpoint 121: Function "strncat" not defined.
+Error in re-setting breakpoint 122: Function "strncmp" not defined.
+Error in re-setting breakpoint 123: Function "strncpy" not defined.
+Error in re-setting breakpoint 124: Function "strrchr" not defined.
+Error in re-setting breakpoint 125: Function "strpbrk" not defined.
+Error in re-setting breakpoint 127: Function "strspn" not defined.
+Error in re-setting breakpoint 128: Function "strstr" not defined.
+Error in re-setting breakpoint 132: Function "stpcpy" not defined.
+Error in re-setting breakpoint 133: Function "stpncpy" not defined.
+Error in re-setting breakpoint 134: Function "strcasecmp" not defined.
+Error in re-setting breakpoint 135: Function "strncasecmp" not defined.
+Error in re-setting breakpoint 136: Function "strcasecmp_l" not defined.
+Error in re-setting breakpoint 137: Function "strncasecmp_l" not defined.
+Error in re-setting breakpoint 142: Function "strchrnul" not defined.
+Exception ignored in: <gdb.GdbOutputFile object at 0x7fe39c5bc9b0>
+Traceback (most recent call last):
+  File "/usr/share/gdb/python/gdb/__init__.py", line 43, in flush
+    def flush(self):
+KeyboardInterrupt
